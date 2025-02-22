@@ -7,8 +7,5 @@ describe("MyNFT Contract", function () {
     const MyNFT = await ethers.getContractFactory("MyNFT");
     const myNFT = await MyNFT.deploy(deployer.address);
     await myNFT.waitForDeployment();
-
-    // For example, if you had a function to get the owner, you could check:
-    // expect(await myNFT.owner()).to.equal(deployer.address);
   });
 });

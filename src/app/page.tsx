@@ -78,7 +78,7 @@ export default function Home() {
   return (
     <div className="min-h-screen bg-gray-100 flex flex-col items-center justify-center p-4">
       <div className="max-w-lg w-full bg-white rounded-lg shadow-lg p-6">
-        <h1 className="text-3xl font-bold text-center mb-6">Mint Your NFT</h1>
+        <h1 className="text-3xl text-blue-500 font-bold text-center mb-6">Mint Your NFT</h1>
         <p className="text-center text-gray-600 mb-4">
           Contract Address: <br /> {contractAddress}
         </p>
@@ -97,10 +97,10 @@ export default function Home() {
           <input 
             type="file"
             accept="image/*"
-            className="mt-4 w-full text-center"
+            className="mt-4 w-full text-center border-2 border-dashed border-gray-300 rounded-md cursor-pointer"
             onChange={handleFileSelect}
           />
-        </div>
+        </div> 
         <div className="mb-4">
           <input
             type="text"
